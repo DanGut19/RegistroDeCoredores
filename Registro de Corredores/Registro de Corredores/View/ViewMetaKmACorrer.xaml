@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Registro_de_Corredores.ViewModels"
+             x:Class="Registro_de_Corredores.View.ViewMetaKmACorrer">
+
+    <ContentPage.BindingContext>
+        <local:ViewModelsMetaKmACorrer></local:ViewModelsMetaKmACorrer>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Ingrese los KmACorrer" FontSize="50" />
+            <Entry Text="{Binding Km}" Keyboard="Numeric" ></Entry>
+
+            <Button Command="{Binding MetaCorrer}" Text="Crear Circulo" />
+
+            <Label Text="{Binding Resultado}" FontSize="25"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:Registro_de_Corredores.ViewModels"
+             x:Class="Registro_de_Corredores.View.DistanciaRecorrida">
+             Title="DistanciaRecorrida">
+
+    <ContentPage.BindingContext>
+        <local:ViewModelsDistaciaRecorrida></local:ViewModelsDistaciaRecorrida>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Ingrese el Tiempo" />
+            <Entry Text="{Binding distancia}" Keyboard="Numeric"></Entry>
+            <Label Text="Ingrese la Velocidad" />
+            <Entry Text="{Binding distancia}" Keyboard="Numeric"></Entry>
+
+            <Button Command="{Binding CalclarDistancia}" Text="Calcular Distancia" />
+
+            <Label Text="Ingrese sus Km realizados" />
+            <Entry Text="{Binding distancia}" Keyboard="Numeric"></Entry>
+
+            <Label />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
